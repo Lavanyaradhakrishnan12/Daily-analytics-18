@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #6B2FAF, #9005E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero {
+    max-width: 800px;
+    height: 400px;
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+    border-radius:20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+}
+/* inside-img   */
+.inside-img {
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+}
+#img1-div {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    z-index: 1;
+}
+#img2-div {
+    position: absolute;
+    top: 15%;
+    left:20%;
+}
+#img3-div {
+    position: absolute;
+    top: 44%;
+    left: 10%;
+}
+#img4-div {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+#img5-div {
+    position: absolute;
+    top:20% ;
+    left: 60%;
+}
+#img6-div {
+    position: absolute;
+    top:50% ;
+    left: 60%;
+}
+.img-div {
+    width: 90px;
+    height: 90px;
+    background-color: #c3cbdc;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-div img {
+    border-radius: 50%;
+} 
+
+/* inside-para */
+.inside-para {
+    width: 400px;
+    height: 400px;
+}
+.para-head {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 5px;
+    color: #6B2FAF;
+    font-weight: 600;
+}
+.pie-chart {
+    margin-top: 10px;
+    text-align: center;
+}
+/* pie chart explanation */
+.pie-explain {
+    width: 300px;
+    height: 200px;
+    background: #C37DE0;
+    background: linear-gradient(135deg, #c27de0d8, #800df2e1);
+    margin: 15px auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+.pie-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.divForbox {
+    width: 150px;
+    height: 4px;
+    background-color:#c3cbdc;   
+}
+/* colors for boxes */
+.colyellow {
+    background-color: yellow;
+}
+.colgreen {
+    background-color:greenyellow;
+}
+.colred {
+    background-color: red;
+}
+.colblue {
+    background-color: #00b7eb;
+}
+.paraFortxt {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* mobile responsiveness  using media quaries*/
+@media(max-width:520px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;  
+    }
+    .hero {
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+}
